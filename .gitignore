@@ -1,0 +1,7 @@
+*.pdf
+.vscode
+dl_venv
+*.ppt
+*.pptx
+*.mp4
+*.docx
