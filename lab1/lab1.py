@@ -223,8 +223,8 @@ class SimpleNet:
         n = inputs.shape[0]
 
         for epochs in range(self.num_step):
-            if epochs % self.print_interval*10 == 0:
-                self.lr *= 0.9
+            # if epochs % self.print_interval*10 == 0:
+            #     self.lr *= 0.9
             for idx in range(n):
                 # operation in each training step:
                 #   1. forward passing
@@ -262,7 +262,7 @@ class SimpleNet:
 
 
 if __name__ == '__main__':
-    data, label = GenData.fetch_data('XOR', 70)
+    data, label = GenData.fetch_data('Linear', 70)
     lr = 0.5
     
     net = SimpleNet(6, num_step=8000, lr=lr)

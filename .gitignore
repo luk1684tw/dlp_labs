@@ -5,3 +5,7 @@ dl_venv
 *.pptx
 *.mp4
 *.docx
+*.zip
+*.jpg
+*.ipynb
+*.npz
